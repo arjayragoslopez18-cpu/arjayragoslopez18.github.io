@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Unfiltered - Mission</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: 
+                linear-gradient(rgba(178, 63, 31, 0.9), rgba(178, 63, 31, 0.9)),
+                repeating-linear-gradient(to bottom, #d64a27 0, #d64a27 1px, transparent 1px, transparent 15px),
+                repeating-linear-gradient(to right, #d64a27 0, #d64a27 1px, transparent 1px, transparent 15px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            padding: 20px;
+        }
+
+        .top-left-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-left-logo span {
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .top-left-logo .yu {
+            font-size: 2rem;
+            text-transform: none;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            fill: #ffd1af;
+            opacity: 0.7;
+        }
+
+        .mission-panel {
+            border: 5px solid #ffccaa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            position: relative;
+            margin-top: 50px;
+            margin-right: 50px; /* Space for the phone */
+        }
+
+        .mission-header {
+            background-color: #3e1215;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .mission-header h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #ffccaa;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1;
+        }
+
+        .mission-content {
+            background-color: #551c20;
+            padding: 40px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .mission-content p {
+            margin: 0;
+        }
+
+        .red-phone {
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+            width: 120px;
+            transform: translateY(30%);
+            z-index: 2;
+        }
+
+        .oval {
+            width: 50px;
+            height: 50px;
+            background-color: #6d1e18;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .oval-1 { bottom: -20px; left: 20px; width: 40px; height: 40px; }
+        .oval-2 { bottom: -10px; left: 60px; }
+        .oval-3 { bottom: 30px; left: 5px; width: 60px; height: 60px; }
+
+        .items-stack {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+            transform: rotate(10deg);
+        }
+
+        @media (max-width: 600px) {
+            .mission-panel {
+                margin-right: 0;
+                padding-bottom: 80px; /* Space for phone */
+            }
+            .red-phone {
+                position: static;
+                width: 80px;
+                margin: 0 auto;
+                transform: none;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top-left-logo">
+            <span class="yu">YU</span>
+            <span>YOUTH</span>
+            <span>UNFILTERED</span>
+        </div>
+
+        <svg class="sparkle" style="top: 150px; left: 10px;" viewBox="0 0 100 100"><polygon points="50,0 60,40 100,50 60,60 50,100 40,60 0,50 40,40"/></svg>
+        <svg class="sparkle" style="top: 180px; left: -10px; width: 25px; height: 25px;" viewBox="0 0 100 100"><polygon points="50,0 60,40 100,50 60,60 50,100 40,60 0,50 40,40"/></svg>
+
+        <div class="oval oval-1"></div>
+        <div class="oval oval-2"></div>
+        <div class="oval oval-3"></div>
+
+        <img src="https://via.placeholder.com/100x100.png?text=Stack+Items" alt="Stacked Items with Red Ribbon" class="items-stack">
+
+        <div class="mission-panel">
+            <div class="mission-header">
+                <h1>MISSION</h1>
+            </div>
+            <div class="mission-content">
+                <p>The Youth Unfiltered is dedicated to serving the new generation by making sexual education accessible and approachable. We advocate for sharing essential knowledge that students need to navigate their lives—including understanding their sexual desires—and help them address their curiosity with thoughtful guidance and accurate information. We strengthen conservative values by equipping young people to define their boundaries and make informed choices, preventing the risks that may arise when curiosity is left unguided and unaddressed.</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
